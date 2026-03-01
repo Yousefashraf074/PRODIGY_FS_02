@@ -279,19 +279,55 @@ KEYCLOAK_CLIENT_ID=ems-app         # Keycloak client ID
 
 ## 📸 Screenshots
 
-<img width="1883" height="904" alt="image" src="https://github.com/user-attachments/assets/ca9679b5-4fbb-4e96-9ae9-0056743c08a9" />
+### 🔐 Login Page
+> Keycloak-powered authentication with a modern, animated login screen.
 
-<img width="1919" height="912" alt="Screenshot 2026-03-01 223447" src="https://github.com/user-attachments/assets/26cbbcda-c057-4cdf-8b0c-a03a09ba3359" />
+<img width="1883" alt="Login Page" src="https://github.com/user-attachments/assets/ca9679b5-4fbb-4e96-9ae9-0056743c08a9" />
 
-<img width="1914" height="916" alt="Screenshot 2026-03-01 223503" src="https://github.com/user-attachments/assets/7225c32c-866f-4bf6-81aa-336512611a20" />
+---
 
-<img width="1895" height="910" alt="Screenshot 2026-03-01 223625" src="https://github.com/user-attachments/assets/0247f17f-5dc6-49fd-84a4-98809aee7c25" />
+### 📊 Dashboard Overview
+> Real-time statistics with department breakdown bar chart and status donut chart.
 
-<img width="1919" height="906" alt="Screenshot 2026-03-01 223640" src="https://github.com/user-attachments/assets/b6658855-63b3-4107-834b-5f7a9a53a35d" />
+<img width="1919" alt="Dashboard Overview" src="https://github.com/user-attachments/assets/26cbbcda-c057-4cdf-8b0c-a03a09ba3359" />
 
+---
+
+### 👥 Employee List
+> Paginated data table with search, department & status filters, and sortable columns.
+
+<img width="1914" alt="Employee List" src="https://github.com/user-attachments/assets/7225c32c-866f-4bf6-81aa-336512611a20" />
+
+---
+
+### ➕ Add Employee
+> Form with full validation for creating new employee records.
+
+<img width="1895" alt="Add Employee" src="https://github.com/user-attachments/assets/0247f17f-5dc6-49fd-84a4-98809aee7c25" />
+
+---
+
+### ✏️ Edit Employee
+> Pre-populated edit form for updating existing employee details.
+
+<img width="1919" alt="Edit Employee" src="https://github.com/user-attachments/assets/b6658855-63b3-4107-834b-5f7a9a53a35d" />
 
 ---
 
 ## 📄 License
 
 This project was developed as part of the **Prodigy InfoTech Full Stack Development Internship Program** (Task 02).
+
+---
+
+## 👤 Credits
+
+**Yousef Ashraf Mansour** — [@Yousefashraf074](https://github.com/Yousefashraf074)
+
+> Designed, developed, and deployed as part of the **Prodigy InfoTech Full Stack Development Internship**.
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/Yousefashraf074">Yousef Ashraf</a>
+</p>
