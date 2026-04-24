@@ -7,12 +7,12 @@
  * Usage: node setup-keycloak.js
  */
 
-const KEYCLOAK_URL = process.env.KEYCLOAK_URL || 'http://localhost:8080';
+const KEYCLOAK_URL = process.env.KEYCLOAK_URL || 'http://127.0.0.1:8080';
 const ADMIN_USER = 'admin';
 const ADMIN_PASS = 'admin';
 
 async function setup() {
-  console.log('\n🔧 Setting up Keycloak for Employee Management System...\n');
+  console.log('\n🔧 Setting up Keycloak for Cloud Attendance System...\n');
 
   try {
     // 1. Get admin token
@@ -44,7 +44,7 @@ async function setup() {
       body: JSON.stringify({
         realm: 'ems-realm',
         enabled: true,
-        displayName: 'Employee Management System',
+        displayName: 'Cloud Attendance System',
         registrationAllowed: false,
         loginWithEmailAllowed: true,
         duplicateEmailsAllowed: false
@@ -65,7 +65,7 @@ async function setup() {
       headers,
       body: JSON.stringify({
         clientId: 'ems-app',
-        name: 'Employee Management System',
+        name: 'Cloud Attendance System',
         enabled: true,
         publicClient: true,
         directAccessGrantsEnabled: true,
@@ -97,7 +97,7 @@ async function setup() {
       headers,
       body: JSON.stringify({
         name: 'ems-admin',
-        description: 'Administrator role for Employee Management System'
+        description: 'Administrator role for Cloud Attendance System'
       })
     });
     if (roleRes.status === 409) {
@@ -163,8 +163,8 @@ async function setup() {
     console.log('  Keycloak Admin Console: http://localhost:8080/admin');
     console.log('  Admin Login:            admin / admin');
     console.log('');
-    console.log('  EMS User Login:         emsadmin / admin123');
-    console.log('  EMS App:                http://localhost:4200');
+    console.log('  Attendance User Login:  emsadmin / admin123');
+    console.log('  Attendance App:         http://localhost:4200');
     console.log('');
     console.log('═══════════════════════════════════════════════════\n');
 

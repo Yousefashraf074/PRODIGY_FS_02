@@ -17,21 +17,18 @@ async function initDB() {
     db = new SQL.Database();
   }
 
-  // Create employees table (no admins table — Keycloak handles auth)
+  // Create attendance table for Cloud Attendance System
   db.run(`
-    CREATE TABLE IF NOT EXISTS employees (
+    CREATE TABLE IF NOT EXISTS attendance (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      first_name TEXT NOT NULL,
-      last_name TEXT NOT NULL,
-      email TEXT UNIQUE NOT NULL,
-      phone TEXT,
-      department TEXT NOT NULL,
-      position TEXT NOT NULL,
-      salary REAL NOT NULL,
-      hire_date DATE NOT NULL,
-      status TEXT DEFAULT 'Active' CHECK(status IN ('Active', 'Inactive', 'On Leave')),
+      user_id TEXT NOT NULL,
+      date TEXT NOT NULL,
+      check_in TEXT,
+      check_out TEXT,
+      status TEXT NOT NULL DEFAULT 'Present',
       created_at DATETIME DEFAULT (datetime('now')),
-      updated_at DATETIME DEFAULT (datetime('now'))
+      updated_at DATETIME DEFAULT (datetime('now')),
+      UNIQUE(user_id, date)
     );
   `);
 
